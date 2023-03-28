@@ -7,7 +7,7 @@ import { MainLayout } from '@/layouts';
 export default function HomePage() {
   const [keywords, setKeywords] = useState([]);
   const [loading, setLoading] = useState(false);
-  const textRef = useRef(null);
+  const textRef = useRef<HTMLTextAreaElement>(null);
 
   const handleExtract = async () => {
     setLoading(true);
