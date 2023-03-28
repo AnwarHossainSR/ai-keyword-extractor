@@ -7,7 +7,7 @@ import { MainLayout } from '@/layouts';
 export default function HomePage() {
   const [keywords, setKeywords] = useState([]);
   const [loading, setLoading] = useState(false);
-  const textRef = useRef(null);
+  const textRef = useRef<HTMLTextAreaElement>(null);
 
   const handleExtract = async () => {
     setLoading(true);
@@ -31,7 +31,7 @@ export default function HomePage() {
 
     try {
       const response = await fetch(
-        process.env.NEXT_PUBLIC_OPENAI_API_URL,
+        process.env.NEXT_PUBLIC_OPENAI_API_URL as string,
         options
       );
       const json = await response.json();
