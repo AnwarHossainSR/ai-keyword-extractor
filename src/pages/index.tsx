@@ -31,7 +31,7 @@ export default function HomePage() {
 
     try {
       const response = await fetch(
-        process.env.NEXT_PUBLIC_OPENAI_API_URL,
+        process.env.NEXT_PUBLIC_OPENAI_API_URL as string,
         options
       );
       const json = await response.json();
