@@ -6,12 +6,8 @@ export default function HomePage() {
     <>
       <Head />
       <MainLayout>
-        <section className="p-8 flex flex-col h-full justify-center">
-          <h1 className="text-3xl font-bold font-poppins">Next Starter ⚡</h1>
-          <p className="text-lg">
-            A highly opinionated and complete starter for Next.js projects ready
-            to production
-          </p>
+        <section className="p-8 flex flex-col h-full justify-center text-center">
+          <h1 className="text-4xl font-bold">Welcome to Next.js!</h1>
         </section>
       </MainLayout>
     </>
